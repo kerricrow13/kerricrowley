@@ -19,7 +19,7 @@ body {
 ========================= */
 
 .emm-hero {
-    padding: 2rem 8% 3rem;
+    padding: 3rem 8% 3rem;
 }
 
 .emm-hero-content {
@@ -245,34 +245,29 @@ body {
 ========================= */
 
 .breadcrumb {
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    padding-top: 2rem;
-
-    padding-left: 0;
-    padding-right: 0;
-
     display: flex;
     align-items: center;
     gap: .75rem;
 
+    margin-bottom: 2rem;
+
     font-size: .85rem;
+
+    font-weight: 600;
 
     letter-spacing: .05em;
 
     text-transform: uppercase;
 
     color: #8A98A8;
+
+    opacity: .8;
 }
 
 .breadcrumb a {
     color: #D6DEE7;
 
     text-decoration: none;
-
-    font-weight: 600;
 
     transition: color .2s ease;
 }
@@ -283,7 +278,6 @@ body {
 
 .breadcrumb span:last-child {
     color: #ffffff;
-    font-weight: 600;
 }
 
 .breadcrumb a:focus-visible {
