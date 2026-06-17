@@ -245,11 +245,14 @@ body {
 ========================= */
 
 .breadcrumb {
-    max-width: 1400px;
+    max-width: 900px;
 
     margin: 0 auto;
 
-    padding: 2rem 8% 0;
+    padding-top: 2rem;
+
+    padding-left: 0;
+    padding-right: 0;
 
     display: flex;
     align-items: center;
