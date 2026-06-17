@@ -30,7 +30,7 @@ body {
     display: inline-block;
     background: rgba(33, 91, 115, 0.25);
     border: 2px solid #215b73;
-    color: #7fd1e8;
+    color: #008197;
     padding: 0.65rem 1rem;
     border-radius: 999px;
     font-size: 1rem;
@@ -93,7 +93,7 @@ body {
 .emm-project-details span {
     display: block;
 
-    color: #7fd1e8;
+    color: #008197;
 
     font-size: .95rem;
 
@@ -175,7 +175,7 @@ body {
 
 .metric-card:hover {
     transform: translateY(-4px);
-    border-color: #48c6ef;
+    border-color: #1a8ea1;
 }
 
 .metric-card h3 {
@@ -218,7 +218,7 @@ body {
 }
 
 .process-grid div:hover {
-    border-color: #48c6ef;
+    border-color: #1a8ea1;
 }
 
 .process-grid h3 {
@@ -236,11 +236,11 @@ body {
 ========================= */
 
 a {
-    color: #7fd1e8;
+    color: #008197;
 }
 
 a:hover {
-    color: #48c6ef;
+    color: #1a8ea1;
 }
 
 /* =========================
