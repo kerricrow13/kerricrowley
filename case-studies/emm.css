@@ -19,11 +19,12 @@ body {
 ========================= */
 
 .emm-hero {
-    padding: 3rem 8% 3rem;
+    padding: 2rem 8% 2rem;
 }
 
 .emm-hero-content {
     max-width: 900px;
+   margin-left: 0;
 }
 
 .eyebrow {
@@ -247,43 +248,35 @@ body {
 .breadcrumb {
     display: flex;
     align-items: center;
-    gap: .75rem;
+    gap: .5rem;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 
-    font-size: .85rem;
+    color: #8A98A8;
+
+    font-size: .8rem;
 
     font-weight: 600;
 
-    letter-spacing: .05em;
+    letter-spacing: .08em;
 
     text-transform: uppercase;
-
-    color: #8A98A8;
 
     opacity: .8;
 }
 
 .breadcrumb a {
-    color: #D6DEE7;
-
+    color: #8A98A8;
     text-decoration: none;
-
-    transition: color .2s ease;
+    transition: .2s ease;
 }
 
 .breadcrumb a:hover {
-    color: #ffffff;
+    color: #D6DEE7;
 }
 
 .breadcrumb span:last-child {
-    color: #ffffff;
-}
-
-.breadcrumb a:focus-visible {
-    outline: 3px solid #008197;
-    outline-offset: 4px;
-    border-radius: 4px;
+    color: #D6DEE7;
 }
 
 /* =========================
