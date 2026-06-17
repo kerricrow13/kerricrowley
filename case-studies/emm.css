@@ -29,8 +29,8 @@ body {
 .eyebrow {
     display: inline-block;
     background: rgba(33, 91, 115, 0.25);
-    border: 2px solid #215b73;
-    color: #008197;
+    border: 2px solid #008197;
+    color: #f5f7fa;
     padding: 0.65rem 1rem;
     border-radius: 999px;
     font-size: 1rem;
@@ -78,7 +78,7 @@ body {
 
 .emm-project-details div {
     background: #171b22;
-    border: 2px solid #215b73;
+    border: 2px solid #008197;
     border-radius: 14px;
 
     padding: 1.25rem;
@@ -93,7 +93,7 @@ body {
 .emm-project-details span {
     display: block;
 
-    color: #008197;
+    color: #f5f7fa;
 
     font-size: .95rem;
 
@@ -160,7 +160,7 @@ body {
 
     background: #171b22;
 
-    border: 2px solid #215b73;
+    border: 2px solid #008197;
 
     border-radius: 16px;
 
@@ -204,7 +204,7 @@ body {
 .process-grid div {
     background: #171b22;
 
-    border: 2px solid #215b73;
+    border: 2px solid #008197;
 
     border-radius: 16px;
 
