@@ -1,92 +1,362 @@
-.case-study-hero {
-    padding: 10rem 2rem;
+{
+--black: #000000;
+--surface: #111111;
+--surface-light: #1a1a1a;
+
+--blue: #008197;
+
+--white: #f0e9f2;
+--white-1: #e5e5e6da;
+
+--font-stack: 'Lato', sans-serif;
+
+--content-width: 850px;
+--container-width: 1200px;
+
 }
 
-.case-study-hero__content {
-    max-width: 1000px;
-    margin: 0 auto;
+/* =======================================
+Base
+======================================= */
+
+{
+box-sizing: border-box;
 }
 
-.case-study-label {
-    color: #008197;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
+html {
+font-size: 62.5%;
+scroll-behavior: smooth;
 }
 
-.case-study-hero h1 {
-    font-size: 7rem;
-    margin: 1rem 0;
+body {
+margin: 0;
+background: var(--black);
+color: var(--white-1);
+font-family: var(--font-stack);
+font-size: 1.9rem;
+line-height: 1.7;
 }
 
-.case-study-subtitle {
-    font-size: 2.4rem;
-    max-width: 800px;
-    color: #d9d9d9;
+img {
+max-width: 100%;
+display: block;
 }
 
-.case-study-meta {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 3rem;
-    margin-top: 5rem;
+a {
+color: var(--blue);
+text-decoration: none;
+transition: .2s ease;
 }
 
-.label {
-    display: block;
-    color: #008197;
-    margin-bottom: .5rem;
-    text-transform: uppercase;
-    font-size: 1.2rem;
+a {
+text-decoration: underline;
+}
+
+a,
+button {
+outline: 3px solid var(--blue);
+outline-offset: 4px;
+}
+
+/* =======================================
+Typography
+======================================= */
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a,
+button,
+span {
+font-family: var(--font-stack);
+}
+
+h1 {
+font-size: clamp(4.8rem, 8vw, 8rem);
+line-height: 1.05;
+color: var(--white);
+margin-bottom: 2rem;
+}
+
+h2 {
+font-size: clamp(3.2rem, 4vw, 4.8rem);
+color: var(--white);
+margin-bottom: 2rem;
+}
+
+h3 {
+font-size: 2.4rem;
+color: var(--white);
+margin-bottom: 1rem;
+}
+
+p {
+margin: 0 0 2rem;
+}
+
+ul {
+padding-left: 2rem;
+}
+
+/* =======================================
+Layout
+======================================= */
+
+.container {
+max-width: var(--container-width);
+margin: 0 auto;
+padding: 0 3rem;
 }
 
 .content-width {
-    max-width: 900px;
-    margin: 0 auto;
+max-width: var(--content-width);
+margin: 0 auto;
 }
 
-.challenge,
+/* =======================================
+Back Link
+======================================= */
+
+.back-link {
+display: inline-flex;
+align-items: center;
+gap: .8rem;
+margin-bottom: 4rem;
+font-size: 1.7rem;
+}
+
+/* =======================================
+Hero
+======================================= */
+
+.case-study-hero {
+padding: 6rem 0 4rem;
+}
+
+.case-study-label {
+color: var(--blue);
+text-transform: uppercase;
+letter-spacing: .14em;
+font-weight: 700;
+font-size: 1.4rem;
+margin-bottom: 1.5rem;
+}
+
+.case-study-subtitle {
+max-width: 750px;
+font-size: clamp(2rem, 2.5vw, 2.8rem);
+color: var(--white-1);
+margin-bottom: 4rem;
+}
+
+.case-study-meta {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+
+.meta-label {
+display: block;
+color: var(--blue);
+font-size: 1.3rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: .12em;
+margin-bottom: .5rem;
+}
+
+.case-study-meta p {
+margin: 0;
+font-size: 1.7rem;
+}
+
+/* =======================================
+Hero Image
+======================================= */
+
+.hero-image {
+margin-top: 4rem;
+border-radius: 16px;
+overflow: hidden;
+border: 1px solid rgba(255,255,255,.08);
+}
+
+.hero-image img {
+width: 100%;
+}
+
+/* =======================================
+Sections
+======================================= */
+
 .overview,
+.challenge,
 .process,
 .gallery,
 .impact,
 .reflection {
-    padding: 8rem 2rem;
+padding: 4rem 0;
 }
 
+/* =======================================
+Callout Box
+======================================= */
+
+.callout {
+background: var(--surface);
+border-left: 4px solid var(--blue);
+padding: 2rem;
+border-radius: 8px;
+margin: 2rem 0;
+}
+
+/* =======================================
+Process Cards
+======================================= */
+
 .process-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
 }
 
 .process-card {
-    background: #111;
-    border-radius: 16px;
-    padding: 2.5rem;
+background: var(--surface);
+border: 1px solid rgba(255,255,255,.08);
+border-radius: 16px;
+padding: 2.5rem;
 }
 
+.process-card h3 {
+color: var(--blue);
+}
+
+/* =======================================
+Images
+======================================= */
+
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+
+.image-grid figure {
+margin: 0;
 }
 
 .image-grid img {
-    border-radius: 16px;
-    width: 100%;
+border-radius: 12px;
+border: 1px solid rgba(255,255,255,.08);
 }
+
+.image-grid figcaption {
+font-size: 1.5rem;
+margin-top: 1rem;
+color: var(--white-1);
+}
+
+/* =======================================
+Impact Metrics
+======================================= */
 
 .impact-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-    gap: 2rem;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+text-align: center;
 }
 
-.impact-number {
-    display: block;
-    font-size: 5rem;
-    color: #008197;
-    font-weight: 700;
+.metric {
+background: var(--surface);
+border-radius: 16px;
+padding: 3rem 2rem;
+border: 1px solid rgba(255,255,255,.08);
+}
+
+.metric-number {
+display: block;
+font-size: 5rem;
+line-height: 1;
+color: var(--blue);
+font-weight: 700;
+margin-bottom: 1rem;
+}
+
+.metric p {
+margin: 0;
+}
+
+/* =======================================
+Reflection
+======================================= */
+
+.reflection {
+border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.reflection p {
+margin-bottom: 0;
+}
+
+/* =======================================
+Footer Navigation
+======================================= */
+
+.case-study-footer {
+padding: 4rem 0 6rem;
+}
+
+.next-project {
+display: inline-flex;
+align-items: center;
+gap: 1rem;
+font-weight: 700;
+}
+
+/* =======================================
+Responsive
+======================================= */
+
+@media (max-width: 900px) {
+
+.case-study-meta,
+.process-grid,
+.image-grid,
+.impact-grid {
+    grid-template-columns: 1fr;
+}
+
+.case-study-hero {
+    padding-top: 4rem;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+}
+
+@media (max-width: 600px) {
+
+.container {
+    padding: 0 2rem;
+}
+
+.overview,
+.challenge,
+.process,
+.gallery,
+.impact,
+.reflection {
+    padding: 3rem 0;
+}
+
+h1 {
+    font-size: 4.6rem;
+}
+
 }
